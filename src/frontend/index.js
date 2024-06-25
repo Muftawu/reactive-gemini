@@ -5,12 +5,19 @@ export function Home () {
 
       const handleSubmit = async () => {
 
-            // store query and response in mongodb storage
+            const response = document.getElementById("response")
+            const query = document.getElementById("query")
 
-            // const output = document.getElementById("output")
-            // const query = document.getElementById("query")
-            // output.innerHTML = query.value
+            // ------ Start activityIcon display --------
 
+            // save the query and response to the mongodb cluster
+
+            // gemini action 
+            // push to gemini_route
+            // await query processing (internet speed :) )
+            // retrieve response and render to frontend
+
+            // ------- Stop AcitivityIcon display -----------
       }
 
       return (
@@ -37,7 +44,7 @@ export function Home () {
                   <p style={{ fontWeight: "bold", paddingRight: 5 }}>
                     Gemini:{" "}
                   </p>
-                  <p id="output">{item.response}</p>
+                  <p id="response">{item.response}</p>
                 </div>
 
                 <div
